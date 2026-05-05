@@ -33,4 +33,4 @@ and a real-time prediction interface for medical practitioners.
 - `praksa.pdf` - detailed project report (Serbian)
 
 ## Requirements
-numpy, pandas, matplotlib, seaborn, scikit-learn, keras
+tensorflow, numpy, pandas, matplotlib, seaborn, scikit-learn
