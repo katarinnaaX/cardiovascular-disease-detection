@@ -19,18 +19,14 @@ dataset (70,000 patients, 10 features).
 | FNR         | 12.25%              | 14.82%        | 14.93%         |
 | AUC         | 0.793               | 0.801         | 0.800          |
 
-All three models achieve similar performance (~70% accuracy, FNR ~15%, AUC ~0.8),
-suggesting the decision boundary is approximately linear, making the neural network
-a poor fit for this problem.
+Random Forest achieved the best overall balance of AUC, accuracy, and false-negative
+rate, and is the recommended model for this dataset.
 
 The main challenge was achieving acceptable accuracy while keeping FNR low. The trade-off is an increase in
-false positives, which means the model is best suited as a **screening tool** — flagging
+false positives, which means the model is best suited as a **screening tool** - flagging
 high-risk patients for further clinical evaluation rather than making definitive
 diagnoses. Future improvements could include additional clinically-informed features
 and a real-time prediction interface for medical practitioners.
-
-Random Forest achieved the best overall balance of AUC, accuracy, and false-negative
-rate, and is the recommended model for this dataset.
 
 ## Files
 - `praksa.ipynb` - full implementation notebook
